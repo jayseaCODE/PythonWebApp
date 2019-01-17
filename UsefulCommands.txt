@@ -1,0 +1,25 @@
+Activate Virtual Environment:
+source virtualenv/Scripts/activate
+
+Django Create Project:
+django-admin.py startproject "NameOfProject" .
+
+Django's Way of Running a Server:
+python manage.py runserver
+
+vi commands 
+(press the i key to go into insert mode, type your text, press <Esc> to go back to normal mode,
+ then write the file and quit with :wq<Enter>)
+
+Django's Way of Creating an App:
+python manage.py startapp "NameOfApp"
+(Django encourages you to structure your code into apps: 
+the theory is that one project can have many apps, 
+you can use third-party apps developed by other people, 
+and you might even reuse one of your own apps in a different project)
+
+python:
+we have the if __name__ == '__main__' clause (if you’ve not seen it before, that’s how a Python script checks
+ if it’s been executed from the command line, rather than just imported by another script). 
+ We call unittest.main(), which launches the unittest test runner, which will automatically find test classes
+ and methods in the file and run them.
